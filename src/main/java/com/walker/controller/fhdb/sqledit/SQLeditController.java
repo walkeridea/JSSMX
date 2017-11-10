@@ -135,7 +135,7 @@ public class SQLeditController extends BaseController {
 			if(Jurisdiction.buttonJurisdiction(menuUrl, "cha")){
 				String sql = pd.getString("sql"); //前台传过来的sql语句
 				List<String> columnList = new ArrayList<>();				//存放字段名
-				List<List<Object>> dataList = new ArrayList<List<Object>>();	//存放数据(从数据库读出来的一条条的数据)
+				List<List<Object>> dataList = new ArrayList<>();	//存放数据(从数据库读出来的一条条的数据)
 				Object[] arrOb = null;
 				try {
 					arrOb = DbFH.executeQueryFH(sql);

@@ -177,10 +177,8 @@ public class LoginController extends BaseController {
 				session.setAttribute(USERNAME + Const.SESSION_ROLE_RIGHTS, roleRights); 	//将角色权限存入session
 				session.setAttribute(Const.SESSION_USERNAME, USERNAME);						//放入用户名到session
 				this.setAttributeToAllDEPARTMENT_ID(session, USERNAME);						//把用户的组织机构权限放到session里面
-				List<Menu> allmenuList = new ArrayList<Menu>();
-				allmenuList = this.getAttributeMenu(session, USERNAME, roleRights);			//菜单缓存
-				List<Menu> menuList = new ArrayList<Menu>();
-				menuList = this.changeMenuF(allmenuList, session, USERNAME, changeMenu);	//切换菜单
+				List<Menu> allmenuList  = this.getAttributeMenu(session, USERNAME, roleRights);			//菜单缓存
+				List<Menu> menuList = this.changeMenuF(allmenuList, session, USERNAME, changeMenu);	//切换菜单
 				if(null == session.getAttribute(USERNAME + Const.SESSION_QX)){
 					session.setAttribute(USERNAME + Const.SESSION_QX, this.getUQX(USERNAME));//按钮权限放到session中
 				}

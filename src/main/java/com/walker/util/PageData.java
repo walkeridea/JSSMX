@@ -29,8 +29,8 @@ public class PageData extends HashMap implements Map{
 		Map returnMap = new HashMap(); 
 		Iterator entries = properties.entrySet().iterator(); 
 		Map.Entry entry; 
-		String name = "";  
-		String value = "";  
+		String name ;
+		String value = "";
 		while (entries.hasNext()) {
 			entry = (Map.Entry) entries.next(); 
 			name = (String) entry.getKey(); 

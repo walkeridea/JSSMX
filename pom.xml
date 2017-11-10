@@ -4,14 +4,14 @@
 	<groupId>walker</groupId>
 	<artifactId>JSSMX</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>JSSMX</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<javax-activation.version>1.1</javax-activation.version>
-		 <spring.version>4.3.12.RELEASE</spring.version>
+		<spring.version>4.3.12.RELEASE</spring.version>
 		<mysql-connector-java.version>5.1.34</mysql-connector-java.version>
 	</properties>
 
